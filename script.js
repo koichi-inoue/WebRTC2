@@ -27,7 +27,7 @@ window.onload = function(){
   DC = document.getElementById("cnvs").getContext('2d');
 
   navigator.getUserMedia( { video: true, audio: false },success, error );
-  start();
+  Start();
 }
 
 function success(stream) { // for success case

@@ -1,0 +1,12 @@
+body {
+  background-color: gray;
+  text-align: center;
+}
+
+video {
+  display: none;
+}
+
+canvas {
+  margin:80px;
+}

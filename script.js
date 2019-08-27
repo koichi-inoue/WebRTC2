@@ -6,7 +6,6 @@ var height = 360;
 var webcam;
 var DC;
 
-var localMediaStream;
 var myTimer;
 
 
@@ -40,7 +39,6 @@ function error(err) { // for error case
   console.log("getUserMedia error: ", err);
 }
 
-// Button Start
 function Start(){
   myTimer = setInterval(Draw,1000/30);
 }
@@ -49,12 +47,10 @@ function Start(){
     DC.drawImage(webcam, 0, 0, width, height);
   }
 
-// Button Stop
 function Stop(){
   clearInterval(myTimer);
 }
 
-// Button Mirror
 function Mirror(){
   DC.translate(width,0);
   DC.scale(-1,1);

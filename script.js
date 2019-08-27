@@ -39,13 +39,10 @@ function error(err) { // for error case
   console.log("getUserMedia error: ", err);
 }
 
+
 function Start(){
   myTimer = setInterval(Draw,1000/30);
 }
-
-  function Draw(){ // Drawing loop
-    DC.drawImage(webcam, 0, 0, width, height);
-  }
 
 function Stop(){
   clearInterval(myTimer);
@@ -54,4 +51,9 @@ function Stop(){
 function Mirror(){
   DC.translate(width,0);
   DC.scale(-1,1);
+}
+
+ 
+function Draw(){ // Drawing loop
+  DC.drawImage(webcam, 0, 0, width, height);
 }
